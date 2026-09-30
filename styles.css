@@ -1,3 +1,45 @@
+
 p {
-    color:green;
+    color:#800000;
+}
+
+h1 {
+    color: #B93447;
+    font-size: 60px;
+}
+
+
+/* pd 1 */
+.banner {
+    height: 150px;
+    background-image: url("https://i.pinimg.com/736x/78/e0/50/78e0506d49c93872ef07da3446884c63.jpg");
+    background-size:cover;
+    background-position: center;
+    padding:80px;
+    text-align: left;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+
+}
+
+/* pd 2 */
+.hide {
+    display: none;
+}
+
+/* pd 3 */
+.nav {
+    position: sticky;
+    top: 0;
+    z-index: 3;
+}
+
+/*all 1*/
+body {
+    padding: 20px;
+    margin: 20px;
+}
+
+/*all2*/
+a:hover {
+        opacity: 0.5;
 }
