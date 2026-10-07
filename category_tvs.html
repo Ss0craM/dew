@@ -9,6 +9,7 @@
     <link rel="stylesheet" href="./styles.css">
 </head>
 
+
 <body>
     <h1>Categoria de produtos</h1>
     <h2>TVs</h2>
@@ -34,3 +35,42 @@
     <a href="./products.html">Voltar</a>
 </body>
 </html>
+
+
+<form id="tv-request-form">
+    <fieldset>
+        <legend>Solicitação de Modelo de TV</legend>
+
+        <label for="nome">Nome:</label>
+        <input type="text" id="nome" name="nome" placeholder="Ex: Marcos Eduardo" autocomplete="name" required />
+
+        <label for="email">E-mail:</label>
+        <input type="email" id="email" name="email" placeholder="Ex: Marcos@email.com" autocomplete="email" required />
+
+        <label for="modelo">Modelo de TV desejado:</label>
+        <imput type="modelos-tv" id="modelo" name="modelo" placeholder="Escolha ou digite um modelo" required />
+
+        <datalist id="modelos-tv">
+            <option value="1">Samsung</option>
+            <option value="2">LG</option>
+        </datalist>
+
+        <button type="reset">Limpar formulário</button>
+        <button type="submit">Enviar Solicitação</button>
+    </fieldset>
+</form>
+
+
+<h2>Perguntas mais frequentes:</h2>
+<details>
+    <summary>Como solicitar um modelo?</summary>
+    <p>
+        Para solicitar um modelo de televisão que não está no site, preencha o formulário acima!
+    </p>
+</details>
+<details>
+    <summary>Pq o preço dos aparelhos não estão atualizados?</summary>
+    <p>
+        Porque sou um mero estudante e, ainda não cheguei na parte em que eu faço com que o preço seja atualizado automaticamente.
+    </p>
+</details>
