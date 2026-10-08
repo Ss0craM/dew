@@ -7,34 +7,97 @@
     <title>Vendas de TVs</title>
     <meta name="description" content="Loja online de TVs e acessórios com os melhores preços">
     <link rel="stylesheet" href="./styles.css">
-</head>
+    
 
-
-<body>
-    <h1>Categoria de Televisões</h1>
-    <h2>TVs</h2>
-    <ul class="products">
-        <li class="product">
-            <img src="./images/imagem certa.avif" alt="Imagem de televisao marca samsung">
-            <h3>Marca: Samsung</h3>
-            <h4>R$ 9.498,00 à vista (Preço atualizado em 29/09/2026)</h4>
-            <h5> ou </h5>
-            <h4>R$ 7.198,95 em 18x de R$ 399,94 sem juros</h4>
-            <a href="https://www.samsung.com/br/tvs/mini-led-tv/kit-smart-tv-miniled-4k-m75h-smart-tv-50-miniled-4k-m75h-65-inch-f-un65m75un50m/" target="_blank" rel="nooper noreferrer">Detalhes</a>
-        </li>
-        <li class="product">
-            <img src="images/thum-1600x1062.webp" alt="Imagem de televisao marca LG">
-            <h3>Marca: LG</h3>
-            <h4>R$ 6.934,05 à vista (Preço atualizado em 29/09/2026)</h4>
-            <h5> ou </h5>
-            <h4>R$ 7.299,00 em até 12x s/ juros no cartão de crédito</h4>
-            <a href="https://www.lg.com/br/tvs-e-soundbars/oled-evo/oled55c6psa/" target="_blank" rel="nooper noreferrer">Detalhes</a>
-        </li>
-    </ul>
-
+<table>
     <a href="./products.html">Voltar</a>
-</body>
-</html>
+    <caption>Lista de TVs disponíveis com preços e parcelamentos</caption>
+
+    <thead>
+        <tr> <!-- Linha -->
+            <th scope="col">Marca</th>
+            <th scope="col">Imagem</th>
+            <th scope="col">Preço</th>
+            <th scope="col">Parcelamento</th>
+            <th scope="col">Detalhes</th>
+        </tr>
+    </thead>
+
+    <tbody class="page-category-tvs">
+        <header class="header">
+            <p>
+                Vendas de TVs e acessórios online 
+            </p>
+            <nav class="nav"
+                <ul class="products-list">
+                    <li class="product">
+                        <li>
+                            <a href="./products.html">Home</a>
+                        </li>
+                        
+                        <li>
+                            <a href="./category_tvs.html" target="_self">TVs</a>
+                        </li>
+                    
+                        <li>
+                            <a href="./category_acessories.html">Acessórios</a>
+                        </li>
+                    </li>
+                </ul>
+            </nav>
+        </header>
+
+        <tr>
+            <th scope="row">Samsung</th>
+            <td>
+                <picture>
+                    <!-- O elemento <picture> permite fornecer diferentes fontes de imagem para diferentes condições, como tamanho da tela ou formato de arquivo. -->
+                    <!-- até 767px small -->
+                    <Source srcset="./images/imagem certa.avif" media="(max-width: 767px)" type="image/avif" />
+                    <!-- até 1339px medium -->
+                    <Source srcset="./images/imagem certa.avif" media="(max-width: 1339px)" type="image/avif" />
+                    <!-- acima de 1339px large -->
+                    <Source srcset="./images/imagem certa.avif"  />  
+                </picture>
+                <img src="./images/imagem certa.avif" alt="Imagem de televisao marca samsung">
+            </td>
+
+            <td>R$ 9.498,00</td>
+            <td>R$ 399,94 18x sem juros</td>
+            <td>
+                <a href="https://www.samsung.com/br/tvs/mini-led-tv/kit-smart-tv-miniled-4k-m75h-smart-tv-50-miniled-4k-m75h-65-inch-f-un65m75un50m/" target="_blank" rel="nooper noreferrer">
+                    Ver mais sobre TVs Samsung
+                </a>
+            </td>
+        </tr>
+
+        <tr>
+            <th scope="row">LG</th>
+            <td>
+                <picture>
+                    <!-- O elemento <picture> permite fornecer diferentes fontes de imagem para diferentes condições, como tamanho da tela ou formato de arquivo. -->
+                    <!-- até 767px small -->
+                    <Source srcset="images/thum-1600x1062.webp" media="(max-width: 767px)" type="image/webp" />
+                    <!-- até 1339px medium -->
+                    <Source srcset="images/thum-1600x1062.webp" media="(max-width: 1339px)" type="image/webp" />
+                    <!-- acima de 1339px large -->
+                    <Source srcset="images/thum-1600x1062.webp"  />
+                <img src="images/thum-1600x1062.webp" alt="Imagem de televisao marca LG">
+            </td>
+
+            <td>R$ 6.934,05</td>
+            <td>R$ 7.299,00 12x s/ juros</td>
+            <td>
+                <a href="https://www.lg.com/br/tvs-e-soundbars/oled-evo/oled55c6psa/" target="_blank" rel="nooper noreferrer"> 
+                    Ver mais sobre TVs LG
+                </a>
+            </td>
+        </tr>
+
+    </tbody>
+</table>
+
+
 
 
 <form id="tv-request-form">
